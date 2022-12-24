@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  color: hsl(229, 23%, 23%);
+  min-height: calc(100vh - 0.01rem);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+.bg-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -1;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+.top_container {
+  height: 9.3rem;
+  width: 22rem;
+  background: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+}
+.avatar {
+  width: 6.35rem;
+  height: 6.35rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -3.1rem auto -1.8rem auto;
+  border: 0.3rem solid hsl(0, 0%, 100%);
+}
+.avatar img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.card {
+  margin-top: 3.3rem;
+  margin-bottom: -4.6rem;
+  height: 15.6rem;
+  line-height: 1.8rem;
+}
+.card .name {
+  font-size: 1rem;
+}
+.card .age {
+  margin-left: 0.3rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.card .city {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+}
+.socials .active {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+}
+.socials {
+  padding-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  border-top: 1px solid hsl(0, 10%, 88%);
+  margin-top: 23px;
+}
